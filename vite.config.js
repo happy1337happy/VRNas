@@ -4,7 +4,6 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  // Используем '/' для локального запуска, чтобы избежать префикса /VRNas/
   base: '/',
   resolve: {
     alias: {

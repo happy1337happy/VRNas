@@ -1,7 +1,7 @@
 export const articles = [
     {   
         id: 1,
-        image: '/blog-img-1.png',
+        image: 'blog-img-1.png',
         title: 'VR Games',
         text: 'Entertainment Goes Virtual: The Rise of VR Gaming',
         author: 'NASYIYA ULFA',
