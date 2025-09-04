@@ -1,7 +1,7 @@
 export const articles = [
     {   
         id: 1,
-        image: '/src/assets/img/blog-img-1.png',
+        image: '/blog-img-1.png',
         title: 'VR Games',
         text: 'Entertainment Goes Virtual: The Rise of VR Gaming',
         author: 'NASYIYA ULFA',
@@ -31,8 +31,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -47,7 +47,7 @@ export const articles = [
     },
     {   
         id: 2,
-        image: '/src/assets/img/blog-img-2.png',
+        image: 'blog-img-2.png',
         title: 'VR Games',
         text: 'Entertainment Goes Virtual: The Rise of VR Gaming',
         author: 'NASYIYA ULFA',
@@ -77,8 +77,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -94,7 +94,7 @@ export const articles = [
     },
     {   
         id: 3,
-        image: '/src/assets/img/blog-img-4.png',
+        image: 'blog-img-4.png',
         title: 'VR Entertainment ',
         text: 'Making Events Memorable: The Power of VR for Corporate and Special Occasions',
         author: 'NASYIYA ULFA',
@@ -124,8 +124,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -140,7 +140,7 @@ export const articles = [
     },
     {   
         id: 4,
-        image: '/src/assets/img/blog-img-5.png',
+        image: 'blog-img-5.png',
         title: 'VR Event',
         text: 'Exploring New Worlds: The Benefits of VR Travel',
         author: 'NASYIYA ULFA',
@@ -170,8 +170,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -186,7 +186,7 @@ export const articles = [
     },
     {   
         id: 5,
-        image: '/src/assets/img/blog-img-7.png',
+        image: 'blog-img-7.png',
         title: 'VR Architecture',
         text: 'Bringing Designs to Life: How VR is Changing Architecture',
         author: 'NASYIYA ULFA',
@@ -216,8 +216,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -232,7 +232,7 @@ export const articles = [
     },
     {   
         id: 6,
-        image: '/src/assets/img/blog-img-6.png',
+        image: 'blog-img-6.png',
         title: 'VR Games',
         text: 'Entertainment Goes Virtual: The Rise of VR Gaming',
         author: 'NASYIYA ULFA',
@@ -262,8 +262,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -278,7 +278,7 @@ export const articles = [
     },
     {
         id: 7,
-        image: '/src/assets/img/blog-img-3.png',
+        image: 'blog-img-3.png',
         title: 'VR Games',
         text: 'Entertainment Goes Virtual: The Rise of VR Gaming',
         author: 'NASYIYA ULFA',
@@ -308,8 +308,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -324,7 +324,7 @@ export const articles = [
     },
     {   
         id: 8,
-        image: '/src/assets/img/blog-img-1.png',
+        image: 'blog-img-1.png',
         title: 'VR Games',
         text: 'Entertainment Goes Virtual: The Rise of VR Gaming',
         author: 'NASYIYA ULFA',
@@ -354,8 +354,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
@@ -370,7 +370,7 @@ export const articles = [
     },
     {
         id: 9,
-        image: '/src/assets/img/blog-img-2.png',
+        image: 'blog-img-2.png',
         title: 'VR Education',
         text: 'The Future of Education: How VR is Revolutionizing the Classroom',
         author: 'NASYIYA ULFA',
@@ -400,8 +400,8 @@ export const articles = [
             {
                 type: "images",
                 items: [
-                '/src/assets/img/blog-img-2.png',
-                '/src/assets/img/blog-img-4.png'
+                'blog-img-2.png',
+                'blog-img-4.png'
                 ]
             },
             {
