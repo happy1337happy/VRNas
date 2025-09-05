@@ -77,7 +77,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history:createWebHistory(),
+    history:createWebHistory('/VRNas/'),
     routes,
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
