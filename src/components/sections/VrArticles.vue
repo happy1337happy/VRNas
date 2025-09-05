@@ -5,7 +5,7 @@
             <div class="article-elements">
                 <div class="article-element" v-for=" article in articles" :key="article.id">
                     <div class="img-wrapp">
-                        <img :src="article.image" alt="img">
+                        <img :src="useImageLoader(`@/assets/img/${article.image}`)" alt="img">
                     </div>
                     <div class="article-text">
                         <div class="h4-box">
@@ -45,7 +45,7 @@
                             class="slide-1"
                         >
                             <SwiperSlide v-for=" article in articles.slice(0, 4)" key="articles.id">
-                                <div class="slide-content":style="{ background: `linear-gradient(180deg, rgba(50, 70, 188, 0) 0%, #192883 100%), url(${article.image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }">
+                                <div class="slide-content":style="{ background: `linear-gradient(180deg, rgba(50, 70, 188, 0) 0%, #192883 100%),  url(${useImageLoader(`@/assets/img/${article.image}`)})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }">
                                     <div class="slide-text">
                                         <div class="slide-title">
                                             <h4>{{ article.title }}</h4>
@@ -78,6 +78,7 @@
     import 'swiper/css/pagination';
     import { articles } from '../../utils/articles';
     import Subscribe from '../ui/Subscribe.vue';
+    import { useImageLoader } from '../../composables/useImageLoader';
 
     const modules = [Autoplay,Pagination];
 
