@@ -29,6 +29,7 @@
                                 >
                                     <li><RouterLink to="/pricing-plan" @click="toggleMenu('page')">Pricing Plan</RouterLink></li>
                                     <li><RouterLink to="/team" @click="toggleMenu('page')">Our Team</RouterLink></li>
+                                    <li><RouterLink to="/detail-service" @click="toggleMenu('page')">Detail Service</RouterLink></li>
                                 </ul>
                             </transition>
                         </li>
@@ -123,7 +124,7 @@
                                 }
                             }
                             .dropdown{
-                                width: 115px;
+                                width: 120px;
                                 background-color: $black-50;
                                 padding: 10px 10px 10px 10px;
                                 position: absolute;

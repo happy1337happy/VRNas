@@ -1,7 +1,7 @@
 <template>
     <div class="blog-card-wrapp" v-for=" article in articles" :key="article.id" data-aos="fade-up" data-aos-duration="1000"> 
         <div class="card-top">
-            <img :src="article.image" alt="img">
+            <img :src="useImageLoader(`@/assets/img/${article.image}`)" alt="img">
         </div>
         <div class="card-bottom">
             <div class="card-title">
@@ -17,6 +17,7 @@
 
 <script setup>
     import { articles } from '../../utils/articles';
+    import { useImageLoader } from '../../composables/useImageLoader';
 </script>
 
 <style scoped lang="scss">

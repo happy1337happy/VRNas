@@ -6,7 +6,7 @@
                 <h2  data-aos="fade-up" data-aos-duration="1000">Revolutionize Your Experience with Our Cutting-Edge VR Design Project</h2>
                 <div class="background-light"></div>
                 <VideoPlayer
-                    previewImg="/src/assets/img/big-video-img-2.png"
+                    :previewImg="previewImage"
                     videoLink="https://www.youtube.com/embed/QbgGIy3kKiM"
                     label="VR Service"
                     videoTitle="How to get started"
@@ -23,6 +23,9 @@
 <script setup>
     import VideoPlayer from '../ui/VideoPlayer.vue';
     import MyButton from '../ui/MyButton.vue';
+    import { useImageLoader } from '../../composables/useImageLoader';
+    
+    const previewImage = useImageLoader('@/assets/img/big-video-img-2.png');
 </script>
 
 <style scoped lang="scss">

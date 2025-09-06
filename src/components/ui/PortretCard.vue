@@ -1,7 +1,7 @@
 <template>
     <div class="card-wrapper"  v-for=" employee in employees" :key="employee.id">
         <div class="img-wrapp">
-            <img :src="employee.photo" alt="img">
+            <img :src="useImageLoader(`@/assets/img/${employee.photo}`)" alt="img">
         </div>
         <div class="name-position">
             <div class="links">
@@ -23,6 +23,7 @@
 
 <script setup>
     import { employees } from '../../utils/employees';
+    import { useImageLoader } from '../../composables/useImageLoader';
 </script>
 
 <style scoped lang="scss">

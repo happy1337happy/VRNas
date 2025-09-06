@@ -12,7 +12,7 @@
             <span class="grad">{{ article.author }}</span> | <span class="grad">{{ article.time }}</span>
           </div>
           <div class="head-img-wrapp" data-aos="fade-up" data-aos-duration="1000">
-            <img :src="article.image" alt="img">
+            <img :src="useImageLoader(`@/assets/img/${article.image}`)" alt="img">
           </div>
           <div class="blog-box-mane" data-aos="fade-up" data-aos-duration="1000">
             <template v-for="(block, index) in article.blocks" :key="index">
@@ -20,7 +20,7 @@
                 {{ block.content }}
               </p>
               <div v-else-if="block.type === 'images'" class="blog-images">
-                <img v-for="(img, idx) in block.items" :key="idx" :src="img" alt="blog image">
+                <img v-for="(img, idx) in block.items" :key="idx" :src="useImageLoader(`@/assets/img/${img}`)" alt="blog image">
               </div>
             </template>
           </div>
@@ -41,7 +41,7 @@
           <p class="others-title">Recent Article</p>
           <div v-if="filteredArticles.length" class="others-card" v-for="item in filteredArticles.slice(0, 4)" :key="item.id" @click="goToArticle(item.id)">
             <div class="card-img">
-              <img :src="item.image" alt="img">
+              <img :src="useImageLoader(`@/assets/img/${item.image}`)" alt="img">
             </div>
             <div class="card-left">
               <div class="card-title">
@@ -93,6 +93,8 @@
 import { useRouter, useRoute } from 'vue-router';
 import { computed, ref, watch } from 'vue';
 import TopNav from '../ui/TopNav.vue';
+import { useImageLoader } from '../../composables/useImageLoader';
+
 
 const props = defineProps({
   article: {
